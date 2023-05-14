@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Reporte de Profe que llega tarde"
+        android:textSize="32dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Vago"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/txtNombreProfesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ejem. Zamora"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion de la Tardanza"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ejm. No se acordaba que tenia clase xd"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chkProgramando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programanado"/>
+
+        <CheckBox
+            android:id="@+id/chkVagueando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vagueando"/>
+
+        <CheckBox
+            android:id="@+id/chkComiendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comiendo"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiene excusa?"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/rbgExcusa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtExcusaSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"/>
+
+        <RadioButton
+            android:id="@+id/rbtExcusaNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salon"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/spnSalon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="EnviarDatos"
+        android:text="Enviar"/>
+
+</LinearLayout>

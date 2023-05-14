@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Esto es una operación de dos valores"
+            android:textSize="50px"
+            android:id="@+id/tv"/>
+
+        <Spinner
+            android:id="@+id/spnOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca primer numero"
+            android:id="@+id/txtNum1"
+            android:layout_below="@id/spnOperacion"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca segundo numero"
+            android:id="@+id/txtNum2"
+            android:layout_below="@id/txtNum1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:onClick="Calcular"
+            android:layout_below="@id/txtNum2"
+            android:id="@+id/but"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblRes"
+            android:textSize="50px"
+            android:layout_below="@id/but"/>
+
+        <CheckBox
+            android:id="@+id/chkSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMA"
+            android:layout_below="@id/lblRes"/>
+
+        <CheckBox
+            android:id="@+id/chkRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESTAR"
+            android:layout_below="@id/chkSumar"/>
+
+        <CheckBox
+            android:id="@+id/chkMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLICAR"
+            android:layout_below="@id/chkRestar"/>
+
+        <CheckBox
+            android:id="@+id/chkDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIVIDIR"
+            android:layout_below="@id/chkMultiplicar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Check"
+            android:onClick="CheckB"
+            android:layout_below="@id/chkDividir"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

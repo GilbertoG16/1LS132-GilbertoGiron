@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imvFoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/imvFoto"
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="Gilberto Girón"/>
+    <TextView
+        android:layout_toRightOf="@+id/imvFoto"
+        android:layout_below="@id/txtNombre"
+        android:id="@+id/txtChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="Contesta"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="4:15"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtNombre"
+        android:id="@+id/txtChatCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#345462"
+        android:background="#25D366"
+        android:textSize="16dp"
+        android:text="1"/>
+</RelativeLayout>
